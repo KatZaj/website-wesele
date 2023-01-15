@@ -22,7 +22,7 @@ export const Cloud = () => (
     renderLayer={(percentage) => (
       <div className={styles.cloudWrapper}>
         <div className={styles.cloudPosition(percentage)}>
-          <img src={cloud} />
+          <img src={cloud} alt="" />
         </div>
       </div>
     )}
