@@ -1,5 +1,5 @@
 import { Cloud } from "./Cloud.js";
-import { Text } from "./Text.js";
+import { TextIntro } from "./TextIntro.js";
 import translation from "../utils";
 import wesele from "../img/boat.png";
 import { css } from "@emotion/css";
@@ -12,6 +12,12 @@ const styles = {
   `,
   invit: css`
     padding: 50px 10px 50px 10px;
+    max-width: 500px;
+    @media (max-width: 70em) {
+      width: 100%;
+      max-width: unset;
+      padding: 20px;
+    }
   `,
   container: css`
     display: flex;
@@ -46,7 +52,7 @@ export const Content = () => (
           <Cloud />
         </div>
         <div className={styles.invit}>
-          <Text
+          <TextIntro
             title={translation.invitation.title}
             content={translation.invitation.content}
           />

@@ -16,7 +16,7 @@ const styles = {
     justify-content: center;
     display: flex;
     width: 100%;
-    height: 320px;
+    height: 380px;
     align-items: end;
   `,
   meduzaPosition: (percentage) => css`
@@ -37,7 +37,7 @@ const styles = {
 
 export const Wave = () => (
   <Parallax
-    strength={800}
+    strength={200}
     renderLayer={(percentage) => (
       <>
         <div className={styles.wavePosition(percentage)}>

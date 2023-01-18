@@ -6,7 +6,7 @@ const styles = {
   photoBeach: css`
     position: relative;
     height: 80vh;
-    @media (max-width: 70em) {
+    @media (max-width: 40em) {
       height: 30vh;
     }
   `,
