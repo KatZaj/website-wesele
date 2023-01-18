@@ -13,7 +13,7 @@ const styles = {
   `,
   textContent: css`
   text-align: justify;
-  padding-top: 25px;
+  padding-top: 10px;
 `,
 };
 
